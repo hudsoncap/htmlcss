@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="ls.ico" type="image/x-icon">
+     <link rel="stylesheet" href="style.css">
+    <title>Contador com loguin</title>
+
+</head>
+<body>
+      <h1>Contador com Loguin</h1>
+      <section>
+            <h2>Loguin de Usuário</h2>
+            <p>Usuário:<br> <input type="text" name="nome" id="nome"></p>
+            <p>Senha:<br> <input type="password" name="senha" id="senha"> 
+            <input type="button" value="Confirmar" onclick="confirmar()"></p>
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" rel="nofollow">Esqueceu a senha?</a> 
+      </section>
+      <section>
+          <h2>Contador</h2>
+          <p>Inicio:<br> <input type="number" name="inicio" id="inicio"> </p>
+          <p>Fim: <br><input type="number" name="fim" id="fim"></p>
+          <p>Passo:<br> <input type="number" name="passo" id="passo">
+          <input type="button" value="Contar" onclick="contar()"></p>
+          <div id="res">
+              
+          </div>
+      </section>
+      <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+body {
+    background: #FFFFFF url("Wide-Superman-Wallpaper-.jpg") no-repeat right top fixed;
+  
+ }
+ h1 {
+    color: rgb(32, 30, 30);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 55px;
+    text-shadow: 5px 5px 10px rgb(243, 241, 241);
+ }
+ h2 {
+     text-align: center;
+     font-family: Arial, Helvetica, sans-serif;
+     text-shadow: 5px 5px 10px black;
+ }
+
+ section {
+        background: rgba(0, 0, 0, 0.24);
+        margin: auto;
+        padding: 15px;
+        border-radius: 15px;
+        width: 500px;
+        color: white;
+        box-shadow: 5px 5px 10px black;
+
+ }
+
+ input{ 
+     border-radius: 6px;
+     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.699);
+}
+
+a {
+    color: white;
+}

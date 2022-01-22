@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Logo3.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Piscina Limpa!!!</title>
+</head>
+<body>
+      <hr>
+      <h1> Tratamento Água piscina</h1>
+      <hr>
+     <section>
+          <p>Litragem Piscina: <input type="number" name="numb" id="numb"> Litros </p>
+          <p>PH da âgua: <input type="number" name="PH" id="PH"  style="margin-left: 38px;"></p>
+          <input type="button" value="Calcular" onclick="Calcular()">
+          <hr>
+          <h2>Resultado</h2>
+          <div id="dec"></div>
+          <div id="clar">Clarificante:</div>
+          <div id="QCG">Cloro granulado Gramas:</div>
+          <div id="QCL">Cloro Liquido ML:</div>
+          <hr>
+           <h2 id="h21">pH:</h2>
+          <div id="RPH"></div>
+          <hr>
+           <h2>Informações Adicionais</h2>
+          <div id="info" style="margin-bottom: 8px; text-align: center;"></div>
+          <hr>
+     </section>
+     <footer><p><strong style="color: white;">Click para Avaliar:</strong>  <input type="button" value="Avaliar" onclick="Avaliar()"> </p>
+          &copy;HudsonADRC
+         </footer>
+    
+     <script src="script.js"></script>
+</body>
+</html>

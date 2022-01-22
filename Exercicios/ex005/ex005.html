@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo3.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Bloco de notas</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<body>
+       <h1>Bloco de Anotações</h1>
+
+       <h2><input type="text" name="titulo" id="titulo" placeholder="Titulo" maxlength="20" style="border-radius: 10px; height: 30px; width: 300px; font-size: 20px; text-align: center; "></h2>
+        
+       
+       <H3> <textarea class="descri" name="desc" id="desc" cols="30" rows="10" placeholder="Descrição..." ></textarea></H3>
+        
+        <h4> <input class="button" type="button" value="Guardar" onclick="guardar()"></h4>
+        
+     
+        <section>
+            <div id="div1">
+            <button class="botao" style="float: right;" id="salvar" onclick="salvar()" >   &#10004;</button>
+            <button class="botao" style="float: right;" id="editar" onclick="editar()" >   &#9998;</button> 
+            <button class="botao" style="float: right;" id="deletar" onclick="deletar()" > &#9746;</button>   </div>
+            <div id="res" style="padding-left: 6px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; "
+                >  Titulo                       
+            </div>
+        </section>
+
+        <section style="
+        border: 2px solid black;
+        margin: auto;
+        height: 300px;
+        width: 400px;
+        background-color: rgb(235, 232, 228);
+        font-size: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.705);
+        overflow-wrap: anywhere;
+        ">
+         <div id='anota'style="padding-left: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> <P style="white-space: pre-line;">Anotações.</P></div>  
+         </section>
+
+         <footer> <p style="padding-top: 50px;">&copy; HudsonADRC &trade;</p></footer>
+
+         <script src="bloco.js"></script>
+          
+    
+</body>
+</html>
