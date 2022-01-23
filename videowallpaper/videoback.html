@@ -1,0 +1,132 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>video background</title>
+ </head>
+ <style>
+     video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.topheader {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  
+}
+
+section {
+  position: relative;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  color: white;
+  width:300px;
+  margin: auto;
+     background-color: rgba(0, 0, 0, 0.377);
+}
+
+header > h1 { font-size: 60px;
+            font-family:fantasy;
+         box-shadow: 5px 5px 10px black;
+         color: rgb(123, 243, 3);}
+
+        header > h1:hover {
+        box-shadow:inset 1px 1px 2px rgba(5, 100, 5, 0.151), 
+         inset 3px 15px 45px rgba(1, 136, 19, 0.37),
+         inset -1px -1px 2px rgba(7, 63, 2, 0.108), 
+         inset -3px -15px 45px rgba(5, 158, 13, 0.26),
+                   2px -2px 12px 2px rgb(6, 121, 15);
+                   transition: 0.5s ease-in;
+                background-color: rgba(1, 71, 1, 0.589);
+                color: white;
+                font-size: 80px;
+                border-radius: 10px;                
+        }
+
+h2 {
+    position: relative;
+    display: flex;
+     text-align: left;
+     justify-content: center;
+     color: rgba(139, 220, 117, 0.585);
+     width: 600px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     
+     font-size: 30px;
+     margin: auto;
+     background-color: rgba(0, 0, 0, 0.705);}
+
+     input { height: 156px; 
+        position: bottom left;
+       padding: 1px;
+    margin: 34px 10px;}
+
+    input:hover {
+        box-shadow:inset 1px 1px 2px rgba(5, 100, 5, 0.151), 
+         inset 3px 15px 45px rgba(1, 136, 19, 0.37),
+         inset -1px -1px 2px rgba(7, 63, 2, 0.108), 
+         inset -3px -15px 45px rgba(5, 158, 13, 0.26),
+                   2px -2px 12px 2px rgb(6, 121, 15);
+                   transition: 0.5s ease-in;
+                background-color: rgba(1, 71, 1, 0.589);
+                color: white;
+                font-size: 18px;
+                border-radius: 10px;
+                }
+    
+ 
+
+
+
+ </style>
+ <body>   
+    <video playsinline autoplay muted loop poster="matrix.png" id="backvideo">
+        <source src="The Matrix Falling Code - Full Sequence 1920 x 1080 HD (1).mp4" type="video/mp4">
+      </video>
+      <header class="topheader">
+        <h1>
+          Matrix
+          <span>Evolution</span>
+        </h1>
+      </header>
+        <main>
+            <h2>Mensagem para Matrix?</h2>
+             <section>               
+                  <p> Mensagem Para Matrix:<textarea name="texto" id="texto" cols="30" rows="10"></textarea></p>
+                  <input type="button" value="Enviar?" onclick="enviar()">
+
+             </section>
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+ </body>
+ </html>
