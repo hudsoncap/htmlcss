@@ -1,14 +1,23 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Luxurious+Roman&family=Passion+One&family=Sriracha&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Luxurious+Roman&family=Sriracha&display=swap');
+
+:root {
+     --font1: Verdana, Geneva, Tahoma, sans-serif;
+     --font2: 'Passion One', cursive;
+     --font3:  'Sriracha', cursive; 
+}
 
 *{ padding: 0px;
- margin: 0px;}
+ margin: 0px;
+}
 
  html,body {
       min-height: 100vh;
       color: darkgray;
+      font-family: var(--font1);
 }
 
 header{ 
@@ -17,7 +26,7 @@ header{
 }
 
 header > h1 {
-      font-family: 'Passion One', cursive;
+      font-family: var(--font2);
       color: white;
       text-align: center;
       font-size: 10vw; 
@@ -32,7 +41,6 @@ header h1:hover {
 header > p {
           text-align: center;
           color: white;
-          font-family: Verdana, Geneva, Tahoma, sans-serif;
           padding-bottom: 50px;
           text-decoration: regular;
 }
@@ -49,9 +57,11 @@ header a:hover, footer a:hover{
 
 
 section{
+     font-family: var(--font3);
      margin-top: 10vh;
      margin-bottom: 10vh;
      padding-left: 30px;
+     font-size: 3vw;
 }
 
 section.normal{
@@ -68,13 +78,14 @@ section.imagem {
 }
 
 section.imagem p {
-       width: 400px;
+       display: inline-block;
        background-color: rgba(0, 0, 0, 0.13);
 }
 
 
-section p{    
+section p{   
      line-height: 2em;
+     padding: 5px;
     
 }
 
