@@ -53,11 +53,12 @@ textarea{
     background-color: rgba(0, 0, 0, 0.02);
     border: 3px solid rgb(2, 151, 2);
     color: chartreuse;
-    width:80%;
+    width:100%;
     margin-left: 10%;
     height: 300px; 
     font-size: 20px;
-    position: left top;
+    position: relative;
+    bottom: 10px;
 }
   
 
@@ -87,10 +88,26 @@ input:hover {
     border-radius: 10px;
 }
 
-h3{color: greenyellow;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h2{color: greenyellow;
+    font-size: 25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    left: 1%;
+    text-align: center;
+    text-shadow: black;
 }
+
+h2:hover {
+    box-shadow:inset 1px 1px 2px rgba(5, 100, 5, 0.151), 
+    inset 3px 15px 45px rgba(1, 136, 19, 0.37),
+    inset -1px -1px 2px rgba(7, 63, 2, 0.108), 
+    inset -3px -15px 45px rgba(5, 158, 13, 0.26),
+        2px -2px 12px 2px rgb(6, 121, 15);
+    transition: 0.5s ease-in;
+    background-color: rgba(1, 71, 1, 0.589);
+    color: white;
+    font-size: 30px;
+    border-radius: 10px;  }
 
 input:active{
     box-shadow:inset 1px 1px 2px rgba(5, 100, 76, 0.151), 
