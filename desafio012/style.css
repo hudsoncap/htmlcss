@@ -61,12 +61,12 @@ section{
      margin-top: 10vh;
      margin-bottom: 10vh;
      padding-left: 30px;
-     font-size: 3vw;
+     font-size: 3.5vw;
 }
 
 section.normal{
       background-color: white;
-      color: rgba(0, 0, 0, 0.294);
+      color: rgb(0, 0, 0);
 }
 
 
@@ -75,12 +75,27 @@ section.imagem {
        color: white;
        padding-top: 10vh;
        padding-bottom: 10vh;
+       background-position: bottom right;
+       background-size: cover;
+       background-attachment: fixed;
+       box-shadow: inset 5px 5px 15px 0px rgba(0, 0, 0, 0.705);
 }
 
 section.imagem p {
        display: inline-block;
-       background-color: rgba(0, 0, 0, 0.13);
+       background-color: rgba(0, 0, 0, 0.548);
+       text-shadow: 1px 1px 0px black;
 }
+
+section#img1 {
+       background-image: url(imagens/background001.jpg);
+       
+}
+
+section#img2 {
+       background-image: url(imagens/background002.jpg);
+}
+
 
 
 section p{   
