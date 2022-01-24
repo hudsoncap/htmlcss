@@ -20,13 +20,18 @@
         <main>
             <h2>Mensagem para Matrix:</h2>
              <section>               
-                  <h3><textarea name="texto" id="texto" cols="30" rows="10"></textarea></h3>
-  
+                  <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+                  <input type="button" value="Enviar" onclick="enviar()">
         </main>
+        <section>
+          <p id="conv"></p>
+        </section>
+
+        <h2 id="msgconv">Mensagem convertida na linguagem da Matrix:</h2>
+
         
     <footer>
              Desenvolvido por Hudson Cardoso!
-
     </footer>  
     <script> 
       var conv = document.getElementById('conv')
@@ -36,7 +41,7 @@
           if (text.value.length ==0 ) {
             alert('Digite uma Mensagem')
           } else {
-            conv.innerHTML = `${text.value}`
+            conv.innerHTML = `${text.value.toLowerCase()}`
           }
       }
      </script>
