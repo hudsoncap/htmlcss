@@ -2,9 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700;900&display=swap');
 
-*{padding: 0px;
-  margin:0px}
 
+*{ padding: 0px;
+ margin: 0px;}
+
+ html,body {
+      min-height: 100vh;
+      color: darkgray;
+}
 
 header{ 
     width: 100%;
@@ -16,35 +21,68 @@ header > h1 {
       color: white;
       text-align: center;
       font-size: 10vw; 
-      padding: 20px 20px;
+      padding-top: 50px;
+      font-variant: small-caps;
 }
 
-header > h2 {
+header h1:hover {
+       text-decoration: underline;
+}
+
+header > p {
           text-align: center;
           color: white;
-          font-size: 20px;
           font-family: Verdana, Geneva, Tahoma, sans-serif;
-          padding-bottom: 30px;
+          padding-bottom: 50px;
           text-decoration: regular;
 }
 
- a { color: white;
-     text-decoration: none;
+header a, footer  a{ color: white;
      padding-bottom: 3px;
-     text-decoration: bold;}
+     font-weight: bolder;
+     text-decoration: none;
+    }
 
-
-main{
+header a:hover, footer a:hover{
+      text-decoration: underline;
 }
 
 
+section{
+     margin-top: 10vh;
+     margin-bottom: 10vh;
+     padding-left: 30px;
+}
 
-div{
-   
+section.normal{
+      background-color: white;
+      color: rgba(0, 0, 0, 0.294);
 }
 
 
+section.imagem {
+       background-color: rgb(58, 57, 57);
+       color: white;
+       padding-top: 10vh;
+       padding-bottom: 10vh;
+}
 
-div{}
+section.imagem p {
+       width: 400px;
+       background-color: rgba(0, 0, 0, 0.13);
+}
 
-footer{}
+
+section p{    
+     line-height: 2em;
+    
+}
+
+footer{
+      background-color: black;
+      color: white;
+      padding: 10px;
+      text-align: center;
+}
+
+
