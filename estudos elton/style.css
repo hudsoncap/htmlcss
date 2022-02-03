@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Luxurious+Roman&display=swap');
+
+/* font-family: 'Bebas Neue', cursive; */
+
+@font-face{
+     font-family: robo;
+     src: url('fontes/idroid.otf') 
+     format('opentype');
+     font-weight: normal;
+     font-style: normal;     
+    }
+
+* {
+    font-family: sans-serif;
+    margin:0px;
+    padding:0px;
+ }
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+      }
+
+
+header {
+     background-image: linear-gradient(to top,#063d1e 60%,#3ddc84);
+     min-height: 120px;
+     width: 100%;
+     padding-bottom: 15px;
+}
+
+header > h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 54px;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.774);
+}
+
+header > p {
+      font-family: 'Bebas Neue', cursive;
+      text-align: center;
+      color: white;
+      font-size: 15px;
+      padding-bottom: 15px;
+      text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.774);
+}
+
+header > nav {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 3px 5px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.774);
+    font-weight: 600;  
+   }
+
+header > nav > a {
+     border: 1px solid var(--cor0);
+     border-radius: 6px;
+     color: white;
+     text-decoration: none;
+     padding: 3px 10px;
+     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.774);
+     font-weight: 600;  
+    }
+
+header > nav > a:hover{
+     font-size: 20px;
+     transition: 0.5s;
+     border-radius: 5px;
+     text-decoration: none;
+}
+
+main{
+     background-color: var(--cor0);
+     border-bottom: 20px solid var(--cor0);
+     
+    }
+
+article{
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 3px 8px rgba(0, 0, 0, 0.096);
+    
+    
+}
+
+article > h2 {
+     font-family: 'robo';
+     font-size: 30px;
+     color: var(--cor4);
+     padding: 10px 5px 30px 5px;
+}
+
+article > h3 {
+        font-family: 'robo';
+        color: var(--cor5);
+        font-size: 25px;
+        padding: 10px 5px 10px 5px;
+        background-image: linear-gradient(to right,#1a5c37 10%,#c5ebd6, white);
+      
+}
+
+article > p {
+    padding: 15px 10px;
+    text-indent: 20px;
+    line-height: 2.4vh;
+}
+
+.divpic2 {
+    width: 100%;
+    text-align: center;
+    background-color: var(--cor4);
+}
+
+article > div{
+     text-align: center;
+     max-width: 800px;
+}
+
+#droidimg{
+      min-height: 80px;
+}
+
+.picimg > img{
+     width: 100%;
+}
+
+.divvideo {
+      padding: 10px;
+      background-color: var(--cor5);
+      margin: auto;
+}
+
+
+aside{
+    background-color: var(--cor0);
+    margin-top: 30px;
+    border-radius: 15px;
+
+}
+
+aside > h3 {
+     background-color: var(--cor5);
+     padding: 15px;
+     border-radius: 15px 15px 0px 0px;
+     color: white;
+}
+
+aside > p {
+      padding: 15px 10px;
+      text-indent: 20px;
+      line-height: 2.4vh;
+}
+
+ul {
+    overflow-wrap: anywere;
+    list-style-position: inside;
+    columns: 2;
+    padding-left: 15px;           
+}
+
+section > p {
+    padding: 15px 10px;
+    text-indent: 20px;
+    line-height: 2.4vh;
+}
+
+a {
+    color: var(--cor4);
+    text-decoration: none;
+    font-weight: 700;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+a:hover {
+      text-decoration: underline;
+}
+
+p > a::after {
+      content: " 🔗";
+      color: whitesmoke;
+}
+
+
+
+footer {
+     background-color: var(--cor5);
+     text-align: center;
+     padding: 3px;
+     color: white;
+    }
+
+
